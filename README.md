@@ -36,7 +36,8 @@ If your X2E board is running another firmware, please follow the procedures belo
 
    https://apps.apple.com/tt/app/nrf-device-firmware-update/id1624454660  (require iOS 16)
 
-2) Copy the firmware binary file `demo_controls_dfu_ism2400.zip` to you mobile phone.
+2) Copy the firmware binary file `demo_controls_dfu_ism2400.zip` to you mobile phone. 
+(Important: Place the file in the download folder, otherwise it may not be recognized correctly)
 
 3) Start the DFU App and select the firmware binary file.
 
@@ -177,7 +178,7 @@ true
 
 
 
-Mint the NFT by replacing `0x60299819...` with the pidZkevmHash you received earlier.
+Mint the NFT by replacing `0xf6d4bd...` with the pidZkevmHash you received earlier.
 
 ```
 cast send 0x28479D68cD3ef5661BDB7505EFD1712D5D0951F6 "mintSensorNFT(uint256,uint256,string)" 0xf6d4bda9e25797a1423a41c485bfaa8e03930f0dbdf2d2b324d79fa71d8c9108 0 "https://global.matchx.io/iso/x2e/x2e_ref_sensor.jpeg" --rpc-url https://geneva-rpc.moonchain.com --private-key 318dee0c207c20f4767e342a52e876b816379334a53277773c783b0e9348d368 --value 9876500000000000000
@@ -201,7 +202,7 @@ cast send 0x28479D68cD3ef5661BDB7505EFD1712D5D0951F6 "burnSensorNFT(uint256)" 0x
 
 The controlled pin output has three modes: the first mode sets the output to always low, the second mode sets it to always high, and the third mode toggles the pin, causing the LED to blink.
 
-Please replace `0x60299819...` with the pidZkevmHash you received earlier in the example commands below.
+Please replace `0xf6d4bd...` with the pidZkevmHash you received earlier in the example commands below.
 
 The controlled pin should be changed within 2 minutes after the transaction is completed.
 
